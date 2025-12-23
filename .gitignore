@@ -1,0 +1,72 @@
+# AI Assistant Artifacts
+.specstory/
+
+# MATLAB/Simulink
+*.asv
+*.slxc
+slprj/
+codegen/
+sfprj/
+work/
+*.pdb
+*.ilk
+
+# TruckSim temporary files
+*.log
+*.tmp
+
+# Python (optional - if using Python for data analysis)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Data and results (temporary files - adjust as needed)
+# data/*.mat
+# results/*.mat
+*.csv
+*.log
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.iml
+*.swp
+*~
+.project
+.settings/
