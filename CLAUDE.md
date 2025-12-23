@@ -61,6 +61,64 @@ As the project grows, consider organizing with:
 - `python/` - Python scripts for data analysis or custom algorithms
 - `notebooks/` - Jupyter notebooks for visualization and analysis
 
+### Documentation Standards
+
+**IMPORTANT:** This project requires strict documentation standards to maintain code clarity and system understanding.
+
+#### Folder Documentation Requirements
+
+**Every folder MUST contain a README.md with:**
+
+1. **Architecture Description** (maximum 3 lines) - Brief overview of the folder's purpose and role in the system
+2. **Files Section** - Listing each file with:
+   - Name
+   - Status (e.g., "In development", "Complete", "Experimental")
+   - Function/Purpose
+
+3. **Update Reminder** - At the bottom:
+   ```markdown
+   **Last Updated:** [Date]
+   **Please update this document if any changes occur to this folder.**
+   ```
+
+#### File Header Requirements
+
+**Every code file MUST start with:**
+
+**For MATLAB files (.m):**
+```matlab
+% Please update this document if any changes occur to the folder it belongs to.
+% Once this file is updated, its header comments and the MD document of its parent folder must be updated accordingly.
+%
+% File Input: [What external dependencies this file relies on]
+% File Output: [What this file provides to external components]
+% File Pos: [This file's position in the local system architecture]
+```
+
+**For Python files (.py):**
+```python
+# Please update this document if any changes occur to the folder it belongs to.
+# Once this file is updated, its header comments and the MD document of its parent folder must be updated accordingly.
+#
+# File Input: [What external dependencies this file relies on]
+# File Output: [What this file provides to external components]
+# File Pos: [This file's position in the local system architecture]
+```
+
+#### Cross-Documentation Update Rule
+
+**CRITICAL:** When you complete any work that affects:
+- Functions and their interfaces
+- System architecture or component relationships
+- Code organization or file structure
+
+You MUST update:
+1. The affected file's header comments
+2. The parent folder's README.md documentation
+3. The main CLAUDE.md (if architectural changes occur)
+
+This ensures documentation stays synchronized with code changes.
+
 ## License
 
 This project is licensed under **Apache License 2.0**. All contributions must comply with this license.
